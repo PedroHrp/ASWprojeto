@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="597.0" prefWidth="383.0" style="-fx-background-color: #2c2416;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLCadastroAdminController">
+   <children>
+      <AnchorPane layoutX="35.0" layoutY="43.0" prefHeight="522.0" prefWidth="313.0" style="-fx-background-color: #d9d3b3;">
+         <children>
+            <Label layoutX="68.0" layoutY="43.0" text="Cadastrar" textAlignment="CENTER" textFill="#2c2416">
+               <font>
+                  <Font name="Tahoma Bold" size="36.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="tfLoginCadastro" focusColor="BLACK" layoutX="51.0" layoutY="130.0" prefHeight="25.0" prefWidth="212.0" promptText="email" unFocusColor="BLACK" />
+            <JFXPasswordField fx:id="tfSenhaCadastro" focusColor="BLACK" layoutX="51.0" layoutY="182.0" prefHeight="25.0" prefWidth="212.0" promptText="senha" />
+            <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="20.0" layoutY="130.0" opacity="0.51" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="20.0" layoutY="182.0" opacity="0.51" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/password.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="tfNomeCadastro" focusColor="BLACK" layoutX="51.0" layoutY="242.0" prefHeight="25.0" prefWidth="212.0" promptText="nome" unFocusColor="BLACK" />
+            <JFXTextField fx:id="tfTelefoneCadastro" focusColor="BLACK" layoutX="51.0" layoutY="304.0" prefHeight="25.0" prefWidth="212.0" promptText="telefone" unFocusColor="BLACK" />
+            <JFXButton fx:id="btCadastrarAdmin" layoutX="51.0" layoutY="413.0" onAction="#cadastrarAdmin" prefHeight="34.0" prefWidth="212.0" style="-fx-background-color: #BAA378;" text="Enviar" textFill="#544b4b" />
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btFechar" layoutX="348.0" onAction="#closeCadastro" text="X" textFill="#dadada">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btVoltar" onAction="#voltarLogin" text="Voltar" textFill="#dadada">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
